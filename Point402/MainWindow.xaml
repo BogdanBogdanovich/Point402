@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Point402"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="OpenWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Hello, my dear friends" Grid.Row="1" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="35" FontFamily="Rockwell"/>
     </Grid>
 </Window>
