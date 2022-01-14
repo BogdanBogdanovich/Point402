@@ -13,6 +13,6 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Hello, my dear friends" Grid.Row="1" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="35" FontFamily="Rockwell"/>
+        <TextBlock x:Name="TBHello" Text="Привет, мой дорогой друг" Grid.Row="1" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="35" FontFamily="Franklin Gothic Heavy"/>
     </Grid>
 </Window>
