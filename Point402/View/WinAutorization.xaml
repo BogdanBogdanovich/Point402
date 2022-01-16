@@ -1,0 +1,41 @@
+﻿<Window x:Class="Point402.View.WinAutorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Point402.View"
+        mc:Ignorable="d"
+        Title="WinAutorization" BorderBrush="Gray" BorderThickness="1" Height="200" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="0.8*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="2.5*"/>
+            <ColumnDefinition Width="0.1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Логин: " Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" Foreground="Gray" FontSize="20"/>
+            <TextBlock Text="Пароль: " Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="20" Foreground="Gray"/>
+        </Grid>
+        <Grid Grid.Column="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <TextBox x:Name="TBLogin" Grid.Row="1" FontSize="20" Text="" VerticalContentAlignment="Center" Foreground="Gray"/>
+            <PasswordBox x:Name="TBPassword" Grid.Row="3" FontSize="20" VerticalContentAlignment="Center" Foreground="Gray"/>
+            <Button x:Name="btnEnterAut" Click="btnEnterAut_Click" Style="{DynamicResource btnStyleCorn}" Grid.Row="5" Width="80" Height="40" Content="Ввод" HorizontalAlignment="Right"/>
+        </Grid>
+    </Grid>
+</Window>

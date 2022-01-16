@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Point402.View;
 
 namespace Point402
 {
@@ -23,6 +25,17 @@ namespace Point402
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnRacer_Click(object sender, RoutedEventArgs e)
+        {
+            WinAutorization winAutorization = new WinAutorization();
+            winAutorization.Show();
+
+        }
+        private void btnView_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
