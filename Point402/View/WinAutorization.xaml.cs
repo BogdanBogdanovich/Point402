@@ -35,5 +35,10 @@ namespace Point402.View
                 MessageBox.Show("Вы не вошли!!!", "Проблема");
             }
         }
+        private void btnExitAut_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+        
     }
 }

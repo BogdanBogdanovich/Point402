@@ -36,6 +36,7 @@
             <TextBox x:Name="TBLogin" Grid.Row="1" FontSize="20" Text="" VerticalContentAlignment="Center" Foreground="Gray"/>
             <PasswordBox x:Name="TBPassword" Grid.Row="3" FontSize="20" VerticalContentAlignment="Center" Foreground="Gray"/>
             <Button x:Name="btnEnterAut" Click="btnEnterAut_Click" Style="{DynamicResource btnStyleCorn}" Grid.Row="5" Width="80" Height="40" Content="Ввод" HorizontalAlignment="Right"/>
+            <Button x:Name="btnExitAut" Click="btnExitAut_Click" Style="{DynamicResource btnStyleCorn}" Grid.Row="5" Width="80" Height="40" Content="Назад" HorizontalAlignment="Right" Margin="85,0"/>
         </Grid>
     </Grid>
 </Window>
