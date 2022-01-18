@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Point402.View"
         mc:Ignorable="d"
-        Title="WinAutorization" BorderBrush="Gray" BorderThickness="1" Height="200" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+        Title="WinAutorization" BorderBrush="Gray" Style="{DynamicResource winStyle}" BorderThickness="1" Height="200" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.1*"/>

@@ -14,7 +14,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <TextBlock x:Name="TBHello" Text="Привет, мой дорогой друг" Grid.Row="1" Foreground="Gray" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="35" FontFamily="Franklin Gothic Heavy"/>
+        <TextBlock x:Name="TBHello" Text="Добро пожаловать" Grid.Row="1" Foreground="Gray" Width="320" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="35" FontFamily="Franklin Gothic Heavy"/>
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -23,8 +23,8 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Style="{DynamicResource btnStyleCorn}" x:Name="btnRacer" Content="Участник" Grid.Column="1" Click="btnRacer_Click"/>
-            <Button Style="{DynamicResource btnStyleCorn}" x:Name="btnView" Content="Зритель" Grid.Column="3" Click="btnView_Click"/>
+            <Button Style="{DynamicResource btnStyleCorn}" x:Name="btnRacer" Width="115" Content="Участник" Grid.Column="1" Click="btnRacer_Click"/>
+            <Button Style="{DynamicResource btnStyleCorn}" x:Name="btnView" Width="115" Content="Зритель" Grid.Column="3" Click="btnView_Click"/>
         </Grid>  
     </Grid>
 </Window>

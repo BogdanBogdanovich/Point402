@@ -37,7 +37,10 @@ namespace Point402.View
         }
         private void btnExitAut_Click(object sender, RoutedEventArgs e)
         {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
             this.Close();
+            
         }
         
     }

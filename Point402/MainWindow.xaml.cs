@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Point402.View;
+using System.Windows.Media.Animation;
 
 namespace Point402
 {
@@ -25,12 +26,18 @@ namespace Point402
         public MainWindow()
         {
             InitializeComponent();
+            DoubleAnimation tbAnimation = new DoubleAnimation();
+            tbAnimation.From = TBHello.ActualWidth;
+            tbAnimation.To = 320;
+            tbAnimation.Duration = TimeSpan.FromSeconds(1.5);
+            TBHello.BeginAnimation(TextBlock.WidthProperty, tbAnimation);
         }
 
         private void btnRacer_Click(object sender, RoutedEventArgs e)
         {
             WinAutorization winAutorization = new WinAutorization();
             winAutorization.Show();
+            this.Close();
 
         }
         private void btnView_Click(object sender, RoutedEventArgs e)
