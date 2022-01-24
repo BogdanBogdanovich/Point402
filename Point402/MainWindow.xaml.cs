@@ -44,5 +44,9 @@ namespace Point402
         {
 
         }
+        private void btnExit1_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

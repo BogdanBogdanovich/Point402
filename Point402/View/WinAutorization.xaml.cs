@@ -28,7 +28,9 @@ namespace Point402.View
         {
             if (TBLogin.Text == "111" && TBPassword.Password.ToString() == "111")
             {
-                MessageBox.Show("Вы успешно вошли!!!", "Ура");
+                MenuWin menuWin = new MenuWin();
+                menuWin.Show();
+                this.Close();
             }
             else
             {

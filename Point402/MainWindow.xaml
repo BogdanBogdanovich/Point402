@@ -5,26 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Point402"
         mc:Ignorable="d"
-        Title="OpenWindow" Height="500" Width="500" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition/>
-            <RowDefinition Height="0.3*"/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
+        Title="OpenWindow" Height="500" Width="500" Background="{x:Null}" WindowStartupLocation="CenterScreen"
+        WindowStyle="None" ResizeMode="NoResize" AllowsTransparency="True">
+    <Border Background="White" BorderThickness="0.3" CornerRadius="10" BorderBrush="Gray">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition/>
+                <RowDefinition Height="0.3*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button x:Name="btnExit1" Grid.Column="3" Style="{DynamicResource btnCloseStyle}" Grid.ColumnSpan="4"
+                    Background="{x:Null}" Width="18" Height="18" HorizontalAlignment="Right" 
+                    VerticalAlignment="Top" Click="btnExit1_Click" Margin="5,10">
+                <Image Source="C:\Users\Фарид\source\repos\Point402\Point402\Image\ExitBTN2.png"/>
+            </Button>
+            <Button x:Name="btnClose1" Grid.Column="3" Style="{DynamicResource btnCloseStyle}" Grid.ColumnSpan="4"
+                    Background="{x:Null}" Width="18" Height="18" HorizontalAlignment="Right" 
+                    VerticalAlignment="Top" BorderThickness="0" Margin="28,10">
+                <Image Source="C:\Users\Фарид\source\repos\Point402\Point402\Image\4.png"/>
+            </Button>
 
-        <TextBlock x:Name="TBHello" Text="Добро пожаловать" Grid.Row="1" Foreground="Gray" Width="320" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="35" FontFamily="Franklin Gothic Heavy"/>
-        <Grid Grid.Row="2">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition Width="0.2*"/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Button Style="{DynamicResource btnStyleCorn}" x:Name="btnRacer" Width="115" Content="Участник" Grid.Column="1" Click="btnRacer_Click"/>
-            <Button Style="{DynamicResource btnStyleCorn}" x:Name="btnView" Width="115" Content="Зритель" Grid.Column="3" Click="btnView_Click"/>
-        </Grid>  
-    </Grid>
+            <TextBlock x:Name="TBHello" Text="Добро пожаловать" Grid.Row="1"
+                   Foreground="Gray" Width="320" TextAlignment="Center"
+                   VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="35"
+                   FontFamily="Franklin Gothic Heavy"/>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="0.2*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Style="{DynamicResource btnStyleCorn}" x:Name="btnRacer" Width="115" 
+                    Content="Участник" Grid.Column="1" Click="btnRacer_Click"/>
+                <Button Style="{DynamicResource btnStyleCorn}" x:Name="btnView" Width="115"
+                    Content="Зритель" Grid.Column="3" Click="btnView_Click"/>
+            </Grid>
+        </Grid>
+    </Border>
 </Window>
